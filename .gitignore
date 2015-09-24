@@ -1,0 +1,5 @@
+vender/**
+web/**
+cache/**
+logs/**
+web/bundles/**

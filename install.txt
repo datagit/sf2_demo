@@ -1,0 +1,26 @@
+[user-bundle: https://symfony.com/doc/master/bundles/FOSUserBundle/index.html]
+[install-command]
+	$ php composer.phar require friendsofsymfony/user-bundle dev-master
+	
+[register-bundle: app/AppKernel.php]
+	new FOS\UserBundle\FOSUserBundle(),
+
+[DoctrineFixturesBundle: http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html]
+[install-command]
+	$ php composer.phar require doctrine/doctrine-fixtures-bundle dev-master
+
+[generator-bundle: http://level7systems.co.uk/en/symfony2-crud-generator-5-minutes/]
+[install-command]
+	$ php composer.phar require jordillonch/crud-generator dev-master
+	
+[register-bundle: app/AppKernel.php]
+
+	new Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle(),
+	new JordiLlonch\Bundle\CrudGeneratorBundle\JordiLlonchCrudGeneratorBundle(),
+
+[generator-entity Post command]
+	$ php app/console jordillonch:generate:crud --entity=LocalMyCoreBundle:User --route-prefix=user --with-write --format=annotation --no-interaction
+
+
+
+

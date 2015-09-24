@@ -1,0 +1,12 @@
+local_my_core:
+    resource: "@LocalMyCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+#user-bundle
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
